@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --orange-color: #f16d36;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.formContainer {
+  padding: 2rem 1rem;
+  min-width: 600px;
+}
+
+h1 {
+  margin: 0rem 0rem 1rem 0rem;
+  font-weight: 500;
+}
+
+.mainForm,
+.formTop,
+.formContainer,
+.formBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.textInputs {
+  display: flex;
+  gap: 1rem;
+}
+
+.textInputs > input,
+input[type="number"] {
+  padding: 0.5rem 1rem 0.5rem 0.3rem;
+}
+
+.textInputs > input:nth-child(1) {
+  min-width: 300px;
+}
+.textInputs > div:nth-child(1) > input {
+  max-width: 100px;
+}
+
+.radioBtnsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: small;
+  margin-left: 0.5rem;
+  width: fit-content;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.percentContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.percentSign {
+  position: absolute;
+  right: 10%;
+}
+
+input[type="radio"] {
+  margin-right: 0.3rem;
+}
+
+#SearchItems,
+.searchBtn {
+  padding: 0.3rem 0.5rem 0.3rem 0.3rem;
+}
+
+#SearchItems {
+  border-left: none;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  outline: inherit;
+  font-size: small;
+}
+
+.searchBtn {
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-right: none;
+  padding: 0rem 0rem 0rem 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchContainer {
+  border: 1px solid grey;
+  display: flex;
+  max-width: 200px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.collectionContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.categoryHead {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #eeeeee;
+  padding: 0.2rem 0.5rem;
+}
+
+.categoryHead > input {
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.categoryChildren > input {
+  margin: 0.3rem 0.5rem 0.3rem 1rem;
+}
+
+.categoryChildren {
+  margin-left: 0.1rem;
+}
+
+button[type="submit"] {
+  background-color: var(--orange-color);
+  padding: 0.8rem 1rem;
+  align-self: flex-end;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
